@@ -1,0 +1,29 @@
+{
+  "name": "Pruebas-Unitarias-y-Cobertura-de-Codigo",
+  "version": "1.0.0",
+  "description": "Generacion de pruebas unitarias con cobertura de codigo sobre bubbleSort",
+  "license": "MIT",
+  "private": true,
+  "main": "src/Ordenador.js",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "coverageReporters": [
+      "text",
+      "html",
+      "lcov"
+    ]
+  },
+  "devDependencies": {
+    "jest": "^30.0.0"
+  }
+}
